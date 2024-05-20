@@ -18,7 +18,6 @@
 * It includes styes for the h2 element and the transition animations.
 */
 <template>
-  <btto<template>
   <button type="button" @click="flag = !flag">Toggle</button>
   <!-- <transition name="fade" mode="out-in">
     <h2 v-if ="flag" key="main">First Test Application!</h2>
