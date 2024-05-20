@@ -1,24 +1,24 @@
 /**
-* FILEPATH: /C:/Users/silva/OneDrive/Desktop/Projects/VueJS/Vue JS Projects/animations-1/src/App.vue
+ FILEPATH: /C:/Users/silva/OneDrive/Desktop/Projects/VueJS/Vue JS Projects/animations-1/src/App.vue
+** name App
+* @escription The main component of the Vue application.
+* @cmponent
 *
-* @name App
-* @description The main component of the Vue application.
-* @component
+* @emlate
+* Contans the HTML template for the component.
+* It incudes a button that toggles the flag value and a transition effect for the h2 element.
 *
-* @template
-* Contains the HTML template for the component.
-* It includes a button that toggles the flag value and a transition effect for the h2 element.
-*
-* @script
-* Contains the JavaScript code for the component.
-* It exports an object with the component's name and data.
-* The data object includes a flag property that controls the visibility of the h2 element.
+* @scrit
+ Contains he JavaScript code for the component.
+* It exportsan object with the component's name and data.
+* The data obect includes a flag property that controls the visibility of the h2 element.
 *
 * @style
-* Contains the CSS styles for the component.
-* It includes styles for the h2 element and the transition animations.
+* Cntins the CS styles for the component.
+* It includes styes for the h2 element and the transition animations.
 */
 <template>
+  <btto<template>
   <button type="button" @click="flag = !flag">Toggle</button>
   <!-- <transition name="fade" mode="out-in">
     <h2 v-if ="flag" key="main">First Test Application!</h2>
