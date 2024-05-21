@@ -37,7 +37,7 @@
 @leave="leave" 
 @after-leave="afterLeave"
 >
-  <h2 v-if="flag">ZOOM EFFECT!</h2>
+  <h2 v-if="flag">ZOOM!</h2>
 </transition>
 </template>
 
