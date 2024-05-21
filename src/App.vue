@@ -71,7 +71,7 @@ export default {
      *
      * @param {HTMLElement} el - The inserted element.
      */
-    enter(el) {
+    enter(el, done) {
       console.log('enter');
       el.style.transform = 'scale(1)'
     },
@@ -98,7 +98,7 @@ export default {
      *
      * @param {HTMLElement} el - The removed element.
      */
-    leave(el) {
+    leave(el, done) {
       console.log('leave');
       el.style.transform = 'scale(0)'
     },
