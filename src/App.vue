@@ -43,6 +43,12 @@
 
 <script>
 
+/**
+ * Vue component representing the main application.
+ *
+ * @name App
+ * @component
+ */
 export default {
   name: 'App',
   data() {
@@ -51,31 +57,61 @@ export default {
     }
   },
   methods: {
+    /**
+     * Lifecycle hook called before the element is inserted into the DOM.
+     *
+     * @param {HTMLElement} el - The element being inserted.
+     */
     beforeEnter(el) {
       console.log('beforeEnter');
       el.style.transform = 'scale(0)'
     },
+    /**
+     * Lifecycle hook called when the element is inserted into the DOM.
+     *
+     * @param {HTMLElement} el - The inserted element.
+     */
     enter(el) {
       console.log('enter');
       el.style.transform = 'scale(1)'
     },
+    /**
+     * Lifecycle hook called after the element is inserted into the DOM.
+     *
+     * @param {HTMLElement} el - The inserted element.
+     */
     afterEnter(el) {
       console.log('afterEnter');
       el.style.transform = 'scale(1)'
     },
+    /**
+     * Lifecycle hook called before the element is removed from the DOM.
+     *
+     * @param {HTMLElement} el - The element being removed.
+     */
     beforeLeave(el) {
       console.log('beforeLeave');
       el.style.transform = 'scale(1)'
     },
+    /**
+     * Lifecycle hook called when the element is removed from the DOM.
+     *
+     * @param {HTMLElement} el - The removed element.
+     */
     leave(el) {
       console.log('leave');
       el.style.transform = 'scale(0)'
     },
+    /**
+     * Lifecycle hook called after the element is removed from the DOM.
+     *
+     * @param {HTMLElement} el - The removed element.
+     */
     afterLeave(el) {
       console.log('afterLeave');
       el.style.transform = 'scale(0)' 
     }
-    }   
+  }   
 }
 </script>
 
